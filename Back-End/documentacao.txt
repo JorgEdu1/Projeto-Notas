@@ -1,0 +1,36 @@
+documentacao para o veni entender tudo
+
+rota /notes/ 
+um get que retorna um json com todas as notas do banco
+
+rota /notes/add
+um post que adiciona um json ao banco e retorna um json dizendo que deu certo
+exp do json de entrada do body:
+{
+    title: "titulo",
+    note: "conteudo da nota"
+}
+
+rota /notes/update
+um put que atualiza uma ocorrencia no banco e retorna uma json avisando que deu certo
+exp do json de entrada do body:
+{
+    id: x
+    title: "titulo",
+    note: "conteudo da nota"
+}
+
+rota /notes/update
+um get que retorna uma ocorrencia por id
+exp do json de entrada do body:
+{
+    id: x
+}
+
+rota /notes/delete
+
+um delete que apaga por um id que chega no body, retorna um json avisando que deu certo
+exp do json de entrada do body:
+{
+    id: x
+}
